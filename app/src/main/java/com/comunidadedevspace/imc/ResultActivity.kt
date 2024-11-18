@@ -17,21 +17,27 @@ class ResultActivity : AppCompatActivity() {
 
         tvResult.text = result.toString()
         val classificacao: String = if (result <= 18.5f) {
+            tvClassificacao.setTextColor(getColor(R.color.red))
             "Abaixo do peso"
         } else if (result > 18.5f && result <= 24.9f) {
 //            tvClassificacao.text = "Peso normal"
+            tvClassificacao.setTextColor(getColor(R.color.green))
             "Peso normal"
         } else if (result > 24.9f && result <= 29.9f) {
 //            tvClassificacao.text = "Sobrepeso"
+            tvClassificacao.setTextColor(getColor(R.color.yellow))
             "Sobrepeso"
         } else if (result > 29.9f && result <= 34.9f) {
 //            tvClassificacao.text = "Obesidade grau 1"
+            tvClassificacao.setTextColor(getColor(R.color.red))
             "Obesidade grau 1"
         } else if (result > 34.9f && result <= 39.9f) {
 //            tvClassificacao.text = "Obesidade grau 2"
+            tvClassificacao.setTextColor(getColor(R.color.red))
             "Obesidade grau 2"
         } else {
 //            tvClassificacao.text = "Obesidade grau 3"
+            tvClassificacao.setTextColor(getColor(R.color.red))
             "Obesidade grau 3"
         }
 
