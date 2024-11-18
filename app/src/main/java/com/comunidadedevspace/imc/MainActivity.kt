@@ -21,15 +21,12 @@ class MainActivity : AppCompatActivity() {
             val alturaStr: String = edtAltura.text.toString()
 
             if (pesoStr == "" || alturaStr == "") {
-//                println("Campo vazio")
                 Snackbar.make(
                     edtPeso,
                     "Preencha todos os campos",
                     Snackbar.LENGTH_LONG
                 ).show()
             } else {
-//                val peso = edtPeso.text.toString().toFloat()
-//                val altura = edtAltura.text.toString().toFloat()
                 val peso = pesoStr.toFloat()
                 val altura = alturaStr.toFloat()
 
